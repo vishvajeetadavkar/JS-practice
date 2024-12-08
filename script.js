@@ -80,29 +80,29 @@ var ans=abc();
 ans();
 
 // event delegation
-// var parent=document.querySelector("#parent");
-// parent.addEventListener("click",function(details){
-//     if(details.target.id=="play"){
-//         console.log("play");
-//     }
-//     else if(details.target.id=="pause"){
-//         console.log("pause");
-//     }
-// });
+var parent=document.querySelector("#parent");
+parent.addEventListener("click",function(details){
+    if(details.target.id=="play"){
+        console.log("play");
+    }
+    else if(details.target.id=="pause"){
+        console.log("pause");
+    }
+});
 
 //error handelling try catch
-// function divide(a,b){
-//     try{
-//         if(b===0){
-//             throw Error("Koi gadbad hui");
-//         }
-//         console.log(a/b);
-//     }
-//     catch(err){
-//         console.log(err);
-//     }
-// }
-// divide(12,0);
+function divide(a,b){
+    try{
+        if(b===0){
+            throw Error("Koi gadbad hui");
+        }
+        console.log(a/b);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+divide(12,0);
 
 //Custom events
 const evt= new Event("pqr");
